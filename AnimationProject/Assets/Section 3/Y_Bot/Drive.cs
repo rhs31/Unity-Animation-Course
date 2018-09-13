@@ -30,5 +30,9 @@ public class Drive : MonoBehaviour {
             anim.SetBool("isWalking", false);
             anim.SetFloat("characterSpeed", 0);
         }
+        if(Input.GetKeyDown("space"))
+        {
+            anim.SetTrigger("isJumping");
+        }
 	}
 }
